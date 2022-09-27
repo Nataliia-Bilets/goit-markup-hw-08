@@ -1,0 +1,43 @@
+.box-main {
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    .box-main {
+        display: block;
+        padding-top: 0;
+    }
+
+    .box-main__title {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+    }
+
+    .box-main__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-basis: calc((100% - 60px)/3);
+    }
+
+    .box-main__list-img {
+        position: relative;
+    }
+
+    .box-main__items-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--primary-text-color-team-dark);
+        background: rgba(47, 48, 58, 0.8);
+    }
+}

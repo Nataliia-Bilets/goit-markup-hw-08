@@ -1,0 +1,34 @@
+.logo-header,
+.logo-footer {
+    width: 134px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--accente-text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .logo-header {
+        margin-right: 88px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .logo-header,
+    .logo-footer {
+        width: 145px;
+        font-size: 26px;
+        line-height: 1.19;
+    }
+    .logo-header {
+        margin-right: 93px;
+    }
+}
+
+.logo-header__dark {
+    color: var(--auxi-text-color);
+}
+.logo-footer__light {
+    color: var(--primary-text-color-team-dark);
+}
+

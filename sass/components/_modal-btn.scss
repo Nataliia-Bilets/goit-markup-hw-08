@@ -1,0 +1,44 @@
+.first-main__btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color-team-dark);
+    background-color: var(--auxi-accente-bgc);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accente-text-color);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .first-main__btn {
+        padding: 10px 32px;
+    }
+}
+
+.filters-menu__btn {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primary-text-color);
+    background-color: var(--additional-bgc);
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-text-color-team-dark);
+        background-color: var(--accente-bgc);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
