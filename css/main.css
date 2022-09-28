@@ -217,6 +217,11 @@ button {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 300px;
+  }
+}
 .modal__close-btn {
   position: absolute;
   top: 8px;
@@ -455,24 +460,10 @@ button {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  position: relative;
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--accente-text-color);
   outline: none;
-}
-.mobile-menu__link.current::after, .mobile-menu__link.current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accente-bgc);
-  border: none;
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-bottom: -1px;
 }
 
 .current {
@@ -987,8 +978,9 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__container {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     column-gap: 165px;
+    row-gap: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1033,11 +1025,6 @@ button {
 @media screen and (max-width: 767px) {
   .container-address,
 .container-social {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 780px) and (max-width: 1199px) {
-  .container-address {
     margin-bottom: 60px;
   }
 }
@@ -1171,11 +1158,13 @@ button {
   }
 }
 @media screen and (max-width: 767px) {
-  .filters-menu {
-    width: 326px;
-  }
   .project-menu__items:last-child {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .filters-menu {
+    width: 326px;
   }
 }
 .filters-menu {
@@ -1263,7 +1252,7 @@ button {
   background: rgba(33, 150, 243, 0.9);
   color: var(--primary-text-color-team-dark);
   overflow: auto;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--transition-dur-and-func);
 }
 .project-container:hover .overlay, .project-container:focus .overlay {

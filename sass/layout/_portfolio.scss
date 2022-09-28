@@ -1,9 +1,11 @@
 @media screen and (max-width: 767px) {
-    .filters-menu {
-        width: 326px;
-    }
     .project-menu__items:last-child {
         margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 400px) and (max-width:767px) {
+    .filters-menu {
+        width: 326px;
     }
 }
 .filters-menu {
@@ -89,7 +91,7 @@
     background: rgba(33, 150, 243, 0.9);
     color: var(--primary-text-color-team-dark);
     overflow: auto;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform var(--transition-dur-and-func);
 
     .project-container:hover &,
