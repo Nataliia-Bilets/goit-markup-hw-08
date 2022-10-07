@@ -1,5 +1,5 @@
 .first-main {
-    max-width: 479px;
+    max-width: 480px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -34,7 +34,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 @media screen and (min-width: 768px) {
     .first-main {
-    max-width: 767px;
+    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-tablet.jpg);
     }
 }
